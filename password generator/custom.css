@@ -74,6 +74,7 @@ label {
 #btn:hover{
     border: whitesmoke dashed;
 }
-.checkbox{
-
+#pass-box{
+background-color: rgb(255, 255, 255);
+border: rgba(117, 117, 117, 0.488) solid 5px;
 }
