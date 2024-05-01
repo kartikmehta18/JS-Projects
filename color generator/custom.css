@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jersey+15&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+}
+body{transition: 1s;}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.52);
+    width:30rem;
+    height: 10rem;
+    border-radius: 20px;
+    border: rgb(255, 255, 255) solid;
+    text-align: center;
+}
+button{
+   width: 50%;
+   padding:20px;
+   background-color: #000;
+   color: white;
+   
+   border-radius: 10px;
+   border: blueviolet solid;
+   font-size:  30px;
+}
+button:hover{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,rgba(153, 153, 153, 1) 100%);
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.47);
+    color:blueviolet;
+    
+}
+h1{
+    font-size: 50px;
+}
