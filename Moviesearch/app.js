@@ -12,4 +12,15 @@ async function tvMazeApi(query) {
     const req = await fetch(`https://api.tvmaze.com/search/shows?q=${query}`);
     const movies = await req.json();
     // console.log(res);
+    makeImage(movies);
+}
+
+function makeImage(movies) {
+    for (let movie of movies){
+        let src = movie.show.image.medium;
+
+        const img = document.createElement("img");
+        img.src= src;
+        container.appendChild(img);
+    }
 }
