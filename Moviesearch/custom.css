@@ -90,6 +90,7 @@ img:hover{
     transform: scale(1.05);
 }
 .image-container{
+    
     display: grid;
     place-content: center;
     grid-template-columns: repeat(auto-fit,minmax(220px,0.4fr));
