@@ -86,9 +86,11 @@ img{
     cursor: pointer;
     overflow: hidden;
 }
+
 img:hover{
     transform: scale(1.05);
 }
+
 .image-container{
     
     display: grid;
