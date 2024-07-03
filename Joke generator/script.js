@@ -8,7 +8,7 @@ let getJoke = () =>{
     .then(item =>jokeContainer.textContent=`${item.joke}`);
 }
 getJoke();
-
+//or async or await
 async function getJoke1(){
     const fe = await fetch(url);
     const data =await fe.json();
