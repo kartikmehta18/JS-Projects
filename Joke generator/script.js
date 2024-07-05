@@ -1,15 +1,15 @@
-const url =` https://api.dictionaryapi.dev/api/v2/entries/en/${input}`;
+const jokeContainer = document.getElementById("joke");
+const btn = document.getElementById("btn");
+const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
 
-let getJoke = () =>{
+let getJoke = () => {
+    jokeContainer.classList.remove("fade");
     fetch(url)
     .then(data => data.json())
-    .then(item =>jokeContainer.textContent=`${item.joke}`);
+    .then(item =>{
+        jokeContainer.textContent = `${item.joke}`;
+        jokeContainer.classList.add("fade");
+    });
 }
+
 getJoke();
-//or async or await
-async function getJoke1(){
-    const fe = await fetch(url);
-    const data =await fe.json();
-    jokeContainer.innerText=`${data.joke}`;
-}
-getJoke1();
